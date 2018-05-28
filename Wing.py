@@ -19,4 +19,7 @@ class Wing():
         self.rootChord = 2*self.wingArea/((1+self.taperRatio)*self.wingSpan)
         self.tipChord = self.taperRatio * self.rootChord
         self.MAC = self.wingSpan/6*(1+2*self.aspectRatio)/(1+self.aspectRatio)
-        self.MACLocation = 2/3 * self.rootChord*(1+self.aspectRatio+self.aspectRatio**2)/(1+self.aspectRatio)
+        self.MACLocation = 2/3 * self.rootChord*(1+self.aspectRatio+self.aspectRatio**2)/(1+self.aspectRatio)\
+
+
+#this is a new comment
