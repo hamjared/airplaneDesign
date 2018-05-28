@@ -1,7 +1,7 @@
 from Wing import Wing
 from Empennage import Empennage
 import operatingConditions as opCond
-import matplotlib
+
 import matplotlib.pyplot as plt
 
 
