@@ -14,11 +14,15 @@ e = 0.95 #efficiency factor
 zeroLift_alpha = math.radians(-2) # rad
 c_d_zerolift = 0.015
 
-#  geometry
+#  empennage geometry
 horizontalStabTaperRatio = 0.8
 horizontalStabAspectRatio = 3
 l_ht = 450 # mm from the CG of airplane to the aerodynamic center of the horizontal stabilizer
 V_ht = 0.7
+verticalStabTaperRatio = 0.8
+verticalStabAspectRatio = 3
+V_vt = 0.04
+
 # cruise conditions
 airDensity = 0.9 # kg/m^3
 velocity = 30 # m/s
