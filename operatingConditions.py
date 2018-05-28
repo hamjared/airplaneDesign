@@ -8,6 +8,11 @@ cg = 200
 taperRatio = 0.5
 aspectRatio = 8
 
+#wing properties
+a_0 = 2 # c_l/rad
+e = 0.95 #efficiency factor
+zeroLift_alpha = 0 # rad
+c_d_zerolift = 0
 
 #  geometry
 horizontalStabTaperRatio = 0.8

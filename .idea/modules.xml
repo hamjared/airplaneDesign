@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../airfoilChordFileGenerator/.idea/airfoilChordFileGenerator.iml" filepath="$PROJECT_DIR$/../airfoilChordFileGenerator/.idea/airfoilChordFileGenerator.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/airplaneDesign.iml" filepath="$PROJECT_DIR$/.idea/airplaneDesign.iml" />
     </modules>
   </component>
