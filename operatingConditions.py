@@ -6,7 +6,7 @@ cg = 200
 
 # wing geometry
 taperRatio = 0.5
-aspectRatio = 8
+aspectRatio = 5
 
 #wing properties
 a_0 = 0.12 *180/math.pi # c_l/rad

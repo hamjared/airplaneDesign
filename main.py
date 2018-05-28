@@ -51,10 +51,24 @@ X_ht = [x1, x2, x3, x4, -x1, -x2, -x3, -x4]
 Y_ht = [-y1, -y2, -y3, -y4, -y1, -y2, -y3, -y4]
 
 plt = matplotlib.pyplot
+plt.figure(1)
 plt.plot(X_wing, Y_wing, X_ht, Y_ht)
 plt.axis('equal')
+
+plt.figure(2)
+alpha = [x for x in range(-5, 10)]
+C_l = wing.calcC_lRange(-5,10)
+plt.plot(alpha, C_l)
+plt.grid()
+
+plt.figure(3)
+C_d = wing.calcC_dRange(-5,10)
+plt.plot(alpha, C_d)
+plt.grid()
+
 plt.show()
 
-wing.plotC_d()
+
+
 
 
