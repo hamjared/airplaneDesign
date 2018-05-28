@@ -22,4 +22,4 @@ class Wing():
         self.MACLocation = 2/3 * self.rootChord*(1+self.aspectRatio+self.aspectRatio**2)/(1+self.aspectRatio)\
 
 
-#this is a new comment
+
