@@ -37,21 +37,18 @@ class Wing():
         C_l_plot.show()
 
     def calcC_l(self, alpha):
-        alpha = self.degToRad(alpha)
-        return  self.a * (alpha - self.zeroLift_alpha)
+        return self.a * (math.radians(alpha) - self.zeroLift_alpha)
 
     def plotC_d(self,alpha_1 = -5, alpha_2 = 10):
         C_d_plot = matplotlib.pyplot
-        C_d = [self.calcC_l(x) for x in range(alpha_1,alpha_2)]
+        C_d = [self.calcC_d(x) for x in range(alpha_1,alpha_2)]
         Alpha = [x for x in range(alpha_1, alpha_2)]
         C_d_plot.plot(Alpha,C_d)
         C_d_plot.show()
     def calcC_d(self,alpha):
-        alpha = self.degToRad(alpha)
-        return self.c_d_zerolift + 1/(math.pi * self.e * self.aspectRatio)*(self.a * (self.calcC_l(alpha)))**2
+        return self.c_d_zerolift + 1/(math.pi * self.e * self.aspectRatio)*(self.calcC_l(alpha))**2
 
-    def degToRad(self,alpha):
-        return alpha * 0.0174533
+
 
 
 

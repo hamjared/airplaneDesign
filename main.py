@@ -51,10 +51,10 @@ X_ht = [x1, x2, x3, x4, -x1, -x2, -x3, -x4]
 Y_ht = [-y1, -y2, -y3, -y4, -y1, -y2, -y3, -y4]
 
 plt = matplotlib.pyplot
-plt.plot(X_wing,Y_wing, X_ht, Y_ht)
+plt.plot(X_wing, Y_wing, X_ht, Y_ht)
 plt.axis('equal')
 plt.show()
 
-
+wing.plotC_d()
 
 

@@ -9,10 +9,10 @@ taperRatio = 0.5
 aspectRatio = 8
 
 #wing properties
-a_0 = 2 # c_l/rad
+a_0 = 0.12 *180/math.pi # c_l/rad
 e = 0.95 #efficiency factor
-zeroLift_alpha = 0 # rad
-c_d_zerolift = 0
+zeroLift_alpha = math.radians(-2) # rad
+c_d_zerolift = 0.015
 
 #  geometry
 horizontalStabTaperRatio = 0.8
