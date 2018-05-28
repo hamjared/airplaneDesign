@@ -1,7 +1,7 @@
 from Wing import Wing
 from Empennage import Empennage
 import operatingConditions as opCond
-
+from Fuselage import Fuselage
 import matplotlib.pyplot
 
 
@@ -65,6 +65,13 @@ plt.figure(3)
 C_d = wing.calcC_dRange(-5,10)
 plt.plot(alpha, C_d)
 plt.grid()
+
+plt.figure(4)
+fuse = Fuselage()
+X, Y = fuse.sideViewPoints()
+plt.axis('equal')
+plt.plot(X, Y)
+
 
 plt.show()
 

@@ -23,6 +23,15 @@ verticalStabTaperRatio = 0.8
 verticalStabAspectRatio = 3
 V_vt = 0.04
 
+#fuselage geometry
+noseTaperLength = 150 #mm
+fuselageHeight = 90 #mm
+fuselageWidth = 50 #mm
+fuselength = 570 # mm
+thrustTubeLength = 270 #mm
+thrustTubeOutletDiameter = 72 # mm
+
+
 # cruise conditions
 airDensity = 0.9 # kg/m^3
 velocity = 30 # m/s
