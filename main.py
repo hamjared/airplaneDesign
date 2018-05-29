@@ -13,15 +13,20 @@ print("tip chord: ", wing.tipChord)
 print()
 empennage = Empennage()
 empennage.calcHTGeometry(wing.wingArea, wing.MAC)
+empennage.calcVTGeometry(wing.wingArea, wing.wingSpan)
 print("ht area: ", empennage.ht.wingArea)
 print("ht span: ", empennage.ht.wingSpan)
 print("ht root chord: ", empennage.ht.rootChord)
 print("ht tip chord: ", empennage.ht.tipChord)
+print()
+print("vt area: ", empennage.vt.wingArea)
+print("vt span: ", empennage.vt.wingSpan)
+print("vt root chord: ",  empennage.vt.rootChord)
+print("vt tip chord : ", empennage.vt.tipChord)
+
 
 battery = Component(1*9.81, 140)
 edf = Component(0.4*9.81, 300)
-
-
 
 x1 = 0
 y1 = opCond.cg - .25*wing.MAC
@@ -69,7 +74,7 @@ C_d = wing.calcC_dRange(-5,10)
 plt.plot(alpha, C_d)
 plt.grid()
 
-plt.show()
+#plt.show()
 
 
 
