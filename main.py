@@ -1,6 +1,7 @@
 from Wing import Wing
 from Empennage import Empennage
 import operatingConditions as opCond
+from Component import Component
 from Fuselage import Fuselage
 import matplotlib.pyplot
 
@@ -16,6 +17,10 @@ print("ht area: ", empennage.ht.wingArea)
 print("ht span: ", empennage.ht.wingSpan)
 print("ht root chord: ", empennage.ht.rootChord)
 print("ht tip chord: ", empennage.ht.tipChord)
+
+battery = Component(1*9.81, 140)
+edf = Component(0.4*9.81, 300)
+
 
 
 x1 = 0
