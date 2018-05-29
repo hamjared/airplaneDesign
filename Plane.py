@@ -6,8 +6,12 @@ from Component import Component
 class Plane:
 
     def __init__(self, fuselage, wing, empennage, components):
-        self.fuselage = Fuselage(fuselage)
-        self.wing = Wing(wing)
-        self.empennage = Empennage(empennage)
+        self.fuselage = fuselage
+        self.wing = wing
+        self.empennage = empennage
+        self.compoents = components
+
+    def calcCG(self):
+        return -1
 
 
