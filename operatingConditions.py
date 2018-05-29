@@ -17,25 +17,25 @@ c_d_zerolift = 0.015
 #  empennage geometry
 horizontalStabTaperRatio = 0.8
 horizontalStabAspectRatio = 3
-l_ht = 450 # mm from the CG of airplane to the aerodynamic center of the horizontal stabilizer
+l_ht = 300 # mm from the CG of airplane to the aerodynamic center of the horizontal stabilizer
 V_ht = 0.7
 verticalStabTaperRatio = 0.8
-verticalStabAspectRatio = 3
-V_vt = 0.04
+verticalStabAspectRatio = 5
+V_vt = 0.01
 
 #fuselage geometry
 noseTaperLength = 150 #mm
 fuselageHeight = 90 #mm
 fuselageWidth = 50 #mm
-fuselength = 570 # mm
+fuselength = 620 # mm
 thrustTubeLength = 270 #mm
 thrustTubeOutletDiameter = 72 # mm
 
 
 # cruise conditions
 airDensity = 0.9 # kg/m^3
-velocity = 30 # m/s
-cruiseC_l = 0.3
+velocity = 50 # m/s
+cruiseC_l = 0.5
 
 #EDF properties
 staticThrustAirDesnity = 1.2

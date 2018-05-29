@@ -4,8 +4,6 @@ import operatingConditions as opCond
 from Fuselage import Fuselage
 import matplotlib.pyplot
 
-
-
 wing = Wing()
 print("wing area: ", wing.wingArea)
 print("wingspan: ", wing.wingSpan)
@@ -13,7 +11,7 @@ print("root chord: ", wing.rootChord)
 print("tip chord: ", wing.tipChord)
 print()
 empennage = Empennage()
-empennage.calcHTGeometry(wing.wingArea,wing.MAC)
+empennage.calcHTGeometry(wing.wingArea, wing.MAC)
 print("ht area: ", empennage.ht.wingArea)
 print("ht span: ", empennage.ht.wingSpan)
 print("ht root chord: ", empennage.ht.rootChord)
@@ -38,7 +36,7 @@ Y_wing = [-y1, -y2, -y3, -y4, -y1, -y2, -y3, -y4]
 x1 = 0
 y1 = opCond.l_ht + opCond.cg - 0.25 * empennage.ht.MAC
 
-x2 = -1* empennage.ht.wingSpan/2
+x2 = -1 * empennage.ht.wingSpan/2
 y2 = y1 + (empennage.ht.rootChord- empennage.ht.tipChord)
 
 x3 = x2
@@ -65,13 +63,6 @@ plt.figure(3)
 C_d = wing.calcC_dRange(-5,10)
 plt.plot(alpha, C_d)
 plt.grid()
-
-plt.figure(4)
-fuse = Fuselage()
-X, Y = fuse.sideViewPoints()
-plt.axis('equal')
-plt.plot(X, Y)
-
 
 plt.show()
 
