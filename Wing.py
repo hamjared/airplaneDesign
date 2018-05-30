@@ -21,6 +21,9 @@ class Wing():
 
         self.a = self.a_0/(1+self.a_0/(math.pi*self.e*self.aspectRatio))
 
+        self.weight = 0
+        self.cg = 0.4 * self.MAC
+
     def calcWingGeometry(self, velocity = opCond.velocity, cruiseC_l = opCond.cruiseC_l, airDensity = opCond.airDensity,weight = opCond.weight):
         self.wingArea = 2*weight/(airDensity*velocity**2*cruiseC_l) * 1000000 # in mm^2
         self.wingSpan = math.sqrt(self.wingArea*self.aspectRatio)

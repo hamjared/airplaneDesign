@@ -43,3 +43,18 @@ class Fuselage:
         y8 = self.thrustTubeOutletDiameter
 
         return [x1, x2, x3, x4, x5, x6, x7, x8], [y1, y2, y3, y4, y5, y6, y7, y8]
+
+    def topViewPoints(self):
+        x1 = 0
+        y1 = 0
+
+        x2 = x1 + self.fuselageWidth/2
+        y2 = y1 - self.noseTaperLength
+
+        x3 = x2
+        y3 = -1 * (self.fuselageLength - self.thrustTubeLength)
+
+        x4 = self.thrustTubeOutletDiameter/2
+        y4 = -1 * self.fuselageLength
+
+        return [x1, x2, x3, x4, -1*x4, -1*x3, -1*x2, -1*x1], [y1, y2, y3, y4, y4, y3, y2, y1]

@@ -6,12 +6,18 @@ from Component import Component
 class Plane:
 
     def __init__(self, fuselage, wing, empennage, components):
-        self.fuselage = Fuselage(fuselage)
-        self.wing = Wing(wing)
-        self.empennage = Empennage(empennage)
-        self.compoents = components
+        self.fuselage = fuselage
+        self.wing = wing
+        self.empennage = empennage
+        self.components = components
 
     def calcCG(self):
-        return
+        xW = 0
+        W = 0
+        for component in self.components:
+            xW += component.weight * component.x_location
+            W += component.weight
+        return xW/W
+
 
 
